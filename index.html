@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aubade 风格灵感体验</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Aubade 灵感馆</div>
+    <nav class="nav">
+      <a href="#collections">系列</a>
+      <a href="#experience">体验</a>
+      <a href="#stores">门店</a>
+      <a href="#service">服务保障</a>
+    </nav>
+    <div class="actions">
+      <button class="ghost">登录</button>
+      <button class="primary">立即选购</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">FRENCH FLAIR · MADE FOR CHINA</p>
+        <h1>在中国大陆也能体验的法式内衣美学</h1>
+        <p class="lede">为都市女性设计的内衣、泳装与居家系列，支持中文客服、人民币结算与合规配送。灵感来自 Aubade 的浪漫剪裁，结合本地化尺码与无忧售后。</p>
+        <div class="hero-actions">
+          <button class="primary">浏览本季新品</button>
+          <button class="ghost">获取尺码助手</button>
+        </div>
+        <div class="hero-pills">
+          <span>¥ 支持人民币支付</span>
+          <span>次日达/闪电配送</span>
+          <span>上海 & 北京试穿体验店</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="card-stack">
+          <div class="card" data-label="蕾丝系列">梦巴黎·花影</div>
+          <div class="card" data-label="轻支撑">柔雾·无钢圈</div>
+          <div class="card" data-label="泳装新品">蔚蓝海岸</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="collections section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">精选系列</p>
+          <h2>跨品类灵感陈列</h2>
+          <p class="lede">从标志性刺绣到日常无痕，按色系、支撑度、场景快速筛选，适合电商与线下联动。</p>
+        </div>
+        <div class="filters">
+          <label>
+            场景
+            <select id="filter-occasion">
+              <option value="all">全部</option>
+              <option value="daily">日常</option>
+              <option value="sport">运动</option>
+              <option value="beach">度假</option>
+              <option value="party">晚宴</option>
+            </select>
+          </label>
+          <label>
+            色系
+            <select id="filter-color">
+              <option value="all">全部</option>
+              <option value="black">黑</option>
+              <option value="red">红</option>
+              <option value="neutral">裸/肤</option>
+              <option value="blue">蓝</option>
+            </select>
+          </label>
+          <label>
+            预算
+            <select id="filter-price">
+              <option value="all">不限</option>
+              <option value="under800">¥800 以下</option>
+              <option value="800-1200">¥800-¥1200</option>
+              <option value="1200-2000">¥1200-¥2000</option>
+              <option value="over2000">¥2000+</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="experience-card">
+        <div class="pill">线上尺码助手</div>
+        <h3>AI 尺码建议 & 虚拟试穿</h3>
+        <p>根据身形数据与试穿反馈实时推荐，支持 AR 视觉试穿，快递到家试穿 7 天无理由退换。</p>
+        <button class="ghost">开启体验</button>
+      </div>
+      <div class="experience-card">
+        <div class="pill">会员运营</div>
+        <h3>中国大陆专属权益</h3>
+        <p>支付宝/微信免密支付、周末闪送、专属造型师视频咨询，生日月双倍积分。</p>
+        <button class="ghost">立即加入</button>
+      </div>
+      <div class="experience-card">
+        <div class="pill">门店融合</div>
+        <h3>线上选款 · 线下试穿</h3>
+        <p>北京三里屯、上海新天地、成都太古里等体验空间，支持线上预约试衣间、到店自提。</p>
+        <button class="ghost">预约门店</button>
+      </div>
+    </section>
+
+    <section class="section banner">
+      <div>
+        <p class="eyebrow">联名限量</p>
+        <h2>东方花园主题胶囊系列</h2>
+        <p class="lede">以牡丹、山茶花刺绣与桑蚕丝面料打造节日礼赠套装，支持礼盒刻字与贺卡定制。</p>
+        <div class="hero-actions">
+          <button class="primary">查看胶囊系列</button>
+          <button class="ghost">下载画册</button>
+        </div>
+      </div>
+      <div class="banner-badges" aria-label="系列特点">
+        <span>天然丝绸</span>
+        <span>中国红限定</span>
+        <span>可持续供应链</span>
+      </div>
+    </section>
+
+    <section id="stores" class="section stores">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">门店体验</p>
+          <h2>中国大陆线下据点</h2>
+          <p class="lede">三大城市中心门店，提供私密量体、专属造型师、礼品包装与到店取货。</p>
+        </div>
+        <div class="store-filters">
+          <label>
+            城市
+            <select id="filter-city">
+              <option value="all">全部</option>
+              <option value="shanghai">上海</option>
+              <option value="beijing">北京</option>
+              <option value="chengdu">成都</option>
+            </select>
+          </label>
+          <label>
+            服务
+            <select id="filter-service">
+              <option value="all">全部</option>
+              <option value="fitting">试穿预约</option>
+              <option value="pickup">到店自提</option>
+              <option value="tailor">量体定制</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div id="store-list" class="store-list" aria-live="polite"></div>
+    </section>
+
+    <section id="service" class="section guarantee">
+      <div class="guarantee-grid">
+        <div>
+          <div class="pill">合规与隐私</div>
+          <h3>中国大陆合规链路</h3>
+          <p>符合个人信息保护法与电商法要求，支付与存储均在境内完成，发票可开具增值税电子发票。</p>
+        </div>
+        <div>
+          <div class="pill">物流体验</div>
+          <h3>全国配送网络</h3>
+          <p>顺丰/京东物流 95% 城市 1-2 日达，偏远地区提供邮政补充，支持夜间配送与门店自提。</p>
+        </div>
+        <div>
+          <div class="pill">售后无忧</div>
+          <h3>7 天试穿期</h3>
+          <p>未剪吊牌支持 7 天无理由退换，线上客服 7x12 小时实时响应，支持到店快速换码。</p>
+        </div>
+        <div>
+          <div class="pill">品牌故事</div>
+          <h3>法式设计 · 本地共创</h3>
+          <p>法国设计团队与上海工作室共创版型，结合东方女性身形数据迭代罩杯与肩带曲线。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section newsletter">
+      <div>
+        <p class="eyebrow">订阅最新资讯</p>
+        <h2>获取新品、会员礼遇与门店活动</h2>
+        <form class="newsletter-form">
+          <label>
+            邮箱
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            城市
+            <input type="text" placeholder="上海/北京/成都…">
+          </label>
+          <button type="submit" class="primary">提交</button>
+          <p class="small">提交即同意接收品牌资讯，可随时取消。</p>
+        </form>
+      </div>
+      <div class="newsletter-perks">
+        <div>
+          <h3>会员特权</h3>
+          <ul>
+            <li>首单包邮 + 7 折礼遇</li>
+            <li>生日月定制礼盒</li>
+            <li>法式沙龙私享活动</li>
+          </ul>
+        </div>
+        <div>
+          <h3>支付与客服</h3>
+          <ul>
+            <li>微信/支付宝/银联全覆盖</li>
+            <li>中文站点 & 人工客服</li>
+            <li>售后客服热线：400-800-1993</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <div class="brand">Aubade 灵感馆</div>
+      <p>灵感源自巴黎，服务扎根中国大陆。提供内衣、泳装、家居服的全渠道体验。</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>帮助中心</h4>
+        <a href="#">配送政策</a>
+        <a href="#">退换服务</a>
+        <a href="#">支付与发票</a>
+      </div>
+      <div>
+        <h4>品牌故事</h4>
+        <a href="#">设计理念</a>
+        <a href="#">可持续发展</a>
+        <a href="#">媒体合作</a>
+      </div>
+      <div>
+        <h4>关注我们</h4>
+        <a href="#">微信视频号</a>
+        <a href="#">小红书</a>
+        <a href="#">微博</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
